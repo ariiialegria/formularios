@@ -33,11 +33,264 @@
         <h3>¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario?</h3>
         <p> <b>a) input type="submit"/b> b) button type="submit" c) btn d) submit </p>
 
-        <h3>¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un formulario?</h3>
+        <h3>¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
+            formulario?</h3>
         <p> <b>a) required</b> b) mandatory c) validate d) mandatoryfield</p>
 
         <h3>¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario?</h3>
-        <p>a) list b) dropdown c) select d) input type="list" </p>
+        <p>a) list b) dropdown <b>c) select</b> d) input type="list" </p>
+
+        <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido?</h3>
+        <p> <b>a) text</b> b) email c) mail d) input</p>
+
+        <h3>¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?</h3>
+        <p> <b>a) value</b> b) default c) preset d) initial</p>
+
+        <h3>¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos.</h3>
+        <p> Los métodos de petición son para indicar la acción que se desea realizar para un recurso determinado, estos
+            métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente,
+            pero algunas características similares son compartidas por un grupo de ellos.
+            Por ejemplo: un request method puede ser safe, idempotent.
+        </p>
+
+        <h3>¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación.</h3>
+
+        <h1>Tabla de códigos</h1>
+        <table>
+            <tr>
+                <th colspan="2">informativas</th>
+            </tr>
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><u>100 Continue</u></td>
+                <td>indica que todo hasta ahora está bien</td>
+            </tr>
+            <tr>
+                <td><u>101 Switching Protocol</u></td>
+                <td>respuesta a un encabezado de solicitud</td>
+            </tr>
+            <tr>
+                <td><u>102 Processing</u></td>
+                <td>el servidor ha recibido la solicitud</td>
+            </tr>
+            <tr>
+                <td><u>103 Early Hints</u></td>
+                <td>permite que el agente de usuario empiece a pre-cargar</td>
+            </tr>
+            <tr>
+                <th colspan="2">Satisfactorias</th>
+            </tr>
+            <tr>
+                <td><u>200 OK</u></td>
+                <td>La solicitud ha tenido éxito</td>
+            </tr>
+            <tr>
+                <td><u>201 Created</u></td>
+                <td>Se ha creado un nuevo recurso como resultado de exito</td>
+            </tr>
+            <tr>
+                <td><u>202 Accepted</u></td>
+                <td>La solicitud se ha recibido, pero aún no se ha actuado.</td>
+            </tr>
+            <tr>
+                <td><u>203 Non-Authoritative Information</u></td>
+                <td>La petición se ha completado con éxito, pero su contenido no se ha obtenido </td>
+            </tr>
+            <tr>
+                <td><u>204 No Content</u></td>
+                <td>La petición se ha completado con éxito pero su respuesta no tiene ningún contenido</td>
+            </tr>
+            <tr>
+                <td><u>205 Reset Content</u></td>
+                <td>El agente de usuario tiene que inicializar la página</td>
+            </tr>
+            <tr>
+                <td><u>206 Partial Content</u></td>
+                <td>La petición servirá parcialmente el contenido solicitado</td>
+            </tr>
+            <tr>
+                <td><u>207 Multi-Status</u></td>
+                <td>Transmite información sobre varios recursos </td>
+            </tr>
+            <tr>
+                <td><u>208 Multi-Status</u></td>
+                <td>El listado de elementos DAV ya se notificó previamente, por lo que no se van a volver a listar.</td>
+            </tr>
+            <tr>
+                <td><u>226 IM Used</u></td>
+                <td>El servidor ha cumplido una petición GET para el recurso</td>
+            </tr>
+            <tr>
+                <th colspan="2">Redirecciones</th>
+            </tr>
+            <tr>
+                <td><u>300 Multiple Choice</u></td>
+                <td>Esta solicitud tiene más de una posible respuesta.</td>
+            </tr>
+            <tr>
+                <td><u>301 Moved Permanently</u></td>
+                <td>Este código de respuesta significa que la URI del recurso solicitado ha sido cambiado.</td>
+            </tr>
+            <tr>
+                <td><u>302 Found</u></td>
+                <td>El recurso de la URI solicitada ha sido cambiado temporalmente</td>
+            </tr>
+            <tr>
+                <td><u>303 See Other</u></td>
+                <td>El servidor envía esta respuesta para dirigir al cliente a un nuevo recurso solicitado a otra
+                    dirección</td>
+            </tr>
+            <tr>
+                <td><u>304 Not Modified</u></td>
+                <td>Le indica al cliente que la respuesta no ha sido modificada</td>
+            </tr>
+            <tr>
+                <td><u>305 Use Proxy</u></td>
+                <td Indica que una respuesta solicitada debe ser accedida desde un proxy.></td>
+            </tr>
+            <tr>
+                <td><u>306 unused</u></td>
+                <td>Este código de respuesta ya no es usado más</td>
+            </tr>
+            <tr>
+                <td><u>307 Temporary Redirect</u></td>
+                <td>Obtener el recurso solicitado a otra URI con el mismo método que se usó la petición anterio</td>
+            </tr>
+            <tr>
+                <td><u>308 Permanent Redirect</u></td>
+                <td>Significa que el recurso ahora se encuentra permanentemente en otra URI</td>
+            </tr>
+            <tr>
+                <th colspan="2">Errores de cliente</th>
+            </tr>
+            <tr>
+                <td><u>400 Bad Request</u></td>
+                <td>El servidor no pudo interpretar la solicitud dada una sintaxis inválida.</td>
+            </tr>
+            <tr>
+                <td><u>401 Unauthorized</u></td>
+                <td>Es necesario autenticar para obtener la respuesta solicitada</td>
+            </tr>
+            <tr>
+                <td><u>402 Payment Required</u></td>
+                <td>Reservado para futuros usos</td>
+            </tr>
+            <tr>
+                <td><u>403 Forbidden</u></td>
+                <td>El servidor está rechazando otorgar una respuesta apropiada.</td>
+            </tr>
+            <tr>
+                <td><u>404 Not Found</u></td>
+                <td>El servidor no pudo encontrar el contenido solicitado</td>
+            </tr>
+            <tr>
+                <td><u>405 Method Not Allowed</u></td>
+                <td>El método solicitado es conocido por el servidor pero ha sido deshabilitado y no puede ser utilizado</td>
+            </tr>
+            <tr>
+                <td><u>406 Not Acceptable</u></td>
+                <td>No encuentra ningún contenido seguido por la criteria dada por el usuario.</td>
+            </tr>
+            <tr>
+                <td><u>407 Proxy Authentication Required</u></td>
+                <td> similar al código 401, pero la autenticación debe estar hecha a partir de un proxy.</td>
+            </tr>
+            <tr>
+                <td><u>408 Request Timeout</u></td>
+                <td>El servidor quiere desconectar una conexión sin usar</td>
+            </tr>
+            <tr>
+                <td><u>409 Conflict</u></td>
+                <td>Conflicto con el estado actual del servidor.</td>
+            </tr>
+            <tr>
+                <td><u>410 Gone</u></td>
+                <td>El contenido solicitado ha sido borrado del servidor.</td>
+            </tr>
+            <tr>
+                <td><u>411 Length Required</u></td>
+                <td>El servidor rechaza la petición porque el campo de encabezado no esta definido y el servidor lo requiere.</td>
+            </tr>
+            <tr>
+                <td><u>412 Precondition Failed</u></td>
+                <td>El cliente ha indicado pre-condiciones en sus encabezados la cual el servidor no cumple.</td>
+            </tr>
+            <tr>
+                <td><u>413 Payload Too Large</u></td>
+                <td>La entidad de petición es más larga que los límites definidos por el servidor</td>
+            </tr>
+            <tr>
+                <td><u>414 URI Too Long</u></td>
+                <td>La URI solicitada por el cliente es más larga de lo que el servidor está dispuesto a interpretar.</td>
+            </tr>
+            <tr>
+                <td><u>415 Unsupported Media Type</u></td>
+                <td>los datos solicitados no está soportado por el servidor</td>
+            </tr>
+            <tr>
+                <td><u>416 Requested Range Not Satisfiable</u></td>
+                <td>El rango especificado por el campo de encabezado Range en la solicitud no cumple</td>
+            </tr>
+            <tr>
+                <td><u>417 Expectation Failed</u></td>
+                <td>La expectativa indicada por el campo de encabezado Expect solicitada no puede ser cumplida por el servidor.</td>
+            </tr>
+            <tr>
+                <td><u>418 I'm a teapot</u></td>
+                <td>El servidor se rehúsa a intentar hacer café con una tetera.</td>
+            </tr>
+            <tr>
+                <td><u>421 Misdirected Request</u></td>
+                <td>No es capaz de producir una respuesta</td>
+            </tr>
+            <tr>
+                <td><u>422 Unprocessable Entity</u></td>
+                <td>La petición estaba bien formada pero no se pudo seguir debido a errores de semántica.</td>
+            </tr>
+            <tr>
+                <td><u>423 Locked</u></td>
+                <td>El recurso que está siendo accedido está bloqueado.</td>
+            </tr>
+            <tr>
+                <td><u>424 Failed Dependency</u></td>
+                <td>La petición falló debido a una falla de una petición previa.</td>
+            </tr>
+            <tr>
+                <td><u>426 Upgrade Required</u></td>
+                <td>El servidor se rehúsa a aplicar la solicitud usando el protocolo actual</td>
+            </tr>
+            <tr>
+                <td><u>428 Precondition Required</u></td>
+                <td>El servidor origen requiere que la solicitud sea condicional.</td>
+            </tr>
+            <tr>
+                <td><u>429 Too Many Requests</u></td>
+                <td>El usuario ha enviado demasiadas solicitudes en un periodo de tiempo dado.</td>
+            </tr>
+            <tr>
+                <td><u>431 Request Header Fields Too Large</u></td>
+                <td>El servidor no está dispuesto a procesar la solicitud porque los campos de encabezado son demasiado largos.</td>
+            </tr>
+            <tr>
+                <td><u>451 Unavailable For Legal Reasons</u></td>
+                <td>El usuario solicita un recurso ilegal, como alguna página web censurada por algún gobierno.</td>
+            </tr>
+            
+
+
+
+
+
+
+
+
+
+        </table>
+
+
 
 
 
